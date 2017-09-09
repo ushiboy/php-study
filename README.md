@@ -18,3 +18,13 @@ PHP7系を利用して書き方、動かし方をざっと触れてみましょ�
   * PSR的な話
   * Composerな話
   * 開発環境的な話
+
+## 環境セットアップ
+
+Vagrantで環境を作ります。
+
+```
+$ vagrant up
+```
+
+[http://localhost:9090/info.php](http://localhost:9090/info.php)にアクセスしてphpinfoのページが表示されればOK。
