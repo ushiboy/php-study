@@ -27,4 +27,7 @@ Vagrantで環境を作ります。
 $ vagrant up
 ```
 
-[http://localhost:9090/info.php](http://localhost:9090/info.php)にアクセスしてphpinfoのページが表示されればOK。
+[http://localhost:9090/info.php](http://localhost:9090/info.php)にアクセスしてphpinfoのページが表示されればセットアップはOK。
+
+リポジトリのhtmlディレクトリがVagrantのnginxでのドキュメントルートになるようにしてあります。
+html配下にphpファイルを置くとブラウザで動作確認ができます。
