@@ -47,8 +47,6 @@
 
 ## 型
 
-### はじめに
-
 * 10種類の基本型
   * スカラー型
     * 論理値(boolean)
@@ -138,6 +136,7 @@
   * `$http_response_header`: HTTP レスポンスヘッダ
   * `$argc`: スクリプトに渡された引数の数
   * `$argv`: スクリプトに渡された引数の配列
+* WEBフレームワークとかに乗っかた開発だと直接触ることは少ないかも
 
 ### 変数のスコープ
 
@@ -152,6 +151,7 @@
 * 変数名を動的に付けることができる
   * できるけどあまりやらない
 ```php
+<?php
 $a = 'hello';
 $$a = 'world';
 echo $hello; // world
@@ -170,19 +170,13 @@ echo $hello; // world
   * define関数で定義
   * constキーワードで定義
 * スクリプト実行中に変更できない
-  * マジック定数は例外
+  * マジック定数（自動的に定義される定数）は例外
+    * `__FILE__`とか`__DIR__`とか
+    * [自動的に定義される定数](http://php.net/manual/ja/language.constants.predefined.php)を参照
 * デフォルトで大文字・小文字を区別する
   * 慣例的には大文字で表記
   * 文字またはアンダースコアで始める
   * 文字、数字、アンダースコアを使う
-
-### 構文
-
-### 自動的に定義される定数
-
-* `__FILE__`とか`__DIR__`とか
-* [自動的に定義される定数](http://php.net/manual/ja/language.constants.predefined.php)を参照
-
 
 ### 式
 
@@ -355,6 +349,7 @@ echo $hello; // world
   * 配列と受け取り側をlistにして行う
 
 ```php
+<?php
 function a() {
   return [1, 2];
 }
@@ -366,6 +361,7 @@ list($a, $b) = a();
   * 詳しくはリファレンスの話で
 
 ```php
+<?php
 function &a() {
   return $ref;
 }
