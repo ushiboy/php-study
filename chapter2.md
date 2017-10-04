@@ -232,13 +232,24 @@ echo greet()."\n";
 
 動作確認
 
+シンボリックリンクを設定
+
+```
+$ vagrant ssh
+$ cd /vagrant/myapp
+$ ln -s myapp/releases/20170901000000 current
+$ exit
+```
+
+アクセスした後に参照先を変更
+
 ```
 $ curl localhost:9090/myapp.php
 
 $ vagrant ssh
 $ cd /vagrant/myapp
 $ rm current
-$ ln -s myapp/releases/20170901000000 current
+$ ln -s myapp/releases/20171001000000 current
 $ exit
 
 $ curl localhost:9090/myapp.php
