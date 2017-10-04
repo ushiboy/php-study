@@ -1,5 +1,9 @@
 html/*.php
 !html/info.php
+!html/myapp.php
+!html/count.php
+!html/counter.php
+myapp/current
 
 ### https://raw.github.com/github/gitignore/6931f87e856069713ab48065e2bbcffc0633f5c6/Global/Vagrant.gitignore
 
