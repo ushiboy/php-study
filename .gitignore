@@ -1,3 +1,4 @@
+.vscode/
 html/*.php
 !html/info.php
 !html/myapp.php
